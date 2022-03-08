@@ -145,7 +145,7 @@ def run_docker(start, stop, pause, resume, clean, file_path):
 
     except MemoryError:
         click.secho(
-            f"Please Allocate More memory to Docker.\nRecommended: 4GB\nCurrent: "
+            f"Please Allocate More memory to Docker.\nRecommended: 6GB\nCurrent: "
             f"{round(float(dict(docker_info).get('mem_total')) / calc_gb, 2)}",
             fg="red",
         )
